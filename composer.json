@@ -1,0 +1,6 @@
+{
+    "name": "vatusa/backups",
+    "require": {
+        "aws/aws-sdk-php": "^3.52"
+    }
+}

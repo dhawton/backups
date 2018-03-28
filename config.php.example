@@ -1,0 +1,30 @@
+<?php
+
+$config = [
+  "compression" => [
+    "type" => "xz",
+    "level" => 9
+  ],
+  "backups" => [
+    "etc" => [
+      "/etc/apache2",
+      "/etc/ssh/sshd_config",
+      "/etc/fail2ban",
+      "/etc/dovecot",
+      "/etc/opendkim",
+      "/etc/opendkim.conf",
+      "/etc/postfix",
+      "/etc/amavis",
+    ],
+  ],
+  "aws" => [
+    "bucket" => "",
+    "region" => "",
+    "access_key" => "",
+    "secret" => "",
+    // https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html
+    "acl" => "private",
+    // https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html
+    "storage_class" => "STANDARD_IA",
+  ]
+]
