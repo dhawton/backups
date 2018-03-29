@@ -116,7 +116,7 @@ function build_xz($tar) {
         $cmd .= "-" . $config['compression']['level'] . " ";
     }
     system("$cmd $tar");
-    return "$tar.gz";
+    return "$tar.xz";
 }
 
 main();
