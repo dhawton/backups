@@ -60,4 +60,5 @@ function start_upload($argv) {
         'ACL' => $config['aws']['acl'],
         'StorageClass' => $config['aws']['storage_class']
     ]);
+    unlink($archive);
 }
