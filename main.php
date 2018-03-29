@@ -44,11 +44,11 @@ function main() {
             system ($cmd);
         }
     }
-    
+
     $datestamp = date("Ymd");
 
     foreach($config['backups'] as $archive => $files) {
-        $filename = "$datestamp.$archive.$config"; // ext added by functions
+        $filename = "$datestamp.$archive"; // ext added by functions
         echo "Building archive $archive...\n";
         $archive = build_archive($filename, $files);
         echo "Archive $archive built. Starting upload script.\n";
