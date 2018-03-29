@@ -39,6 +39,12 @@ function main() {
         exit;
     }
 
+    if (isset($config['prerun'])) {
+        foreach($config['preruns'] as $cmd) {
+            system ($cmd);
+        }
+    }
+    
     $datestamp = date("Ymd");
 
     foreach($config['backups'] as $archive => $files) {

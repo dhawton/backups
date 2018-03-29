@@ -5,6 +5,8 @@ $defaultconfig = [
     "type" => "gz",
     "level" => 0
   ],
+  "prerun" => [
+  ],
   "backups" => [
   ],
   "aws" => [

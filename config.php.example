@@ -5,6 +5,9 @@ $config = [
     "type" => "xz",
     "level" => 9
   ],
+  "prerun" => [
+    "mysqldump --databases xyz > xyz.sql"
+  ],
   "backups" => [
     "etc" => [
       "/etc/apache2",
