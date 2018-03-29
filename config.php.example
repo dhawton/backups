@@ -5,7 +5,7 @@ $config = [
     "type" => "xz",
     "level" => 9
   ],
-  "prerun" => [
+  "preruns" => [
     "mysqldump --databases xyz > xyz.sql"
   ],
   "backups" => [
